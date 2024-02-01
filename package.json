@@ -1,0 +1,22 @@
+{
+  "name": "movies_website",
+  "version": "1.0.0",
+  "description": "Search movies based on title or description",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kunal Sinha Ji",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.5",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "nodemon": "^3.0.2",
+    "pg": "^8.11.3",
+    "react-top-loading-bar": "^2.3.1"
+  }
+}
