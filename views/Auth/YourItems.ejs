@@ -1,0 +1,23 @@
+<%- include("../partials/header"); %>
+    <div class="container mt-4">
+        <% if(data){ %>
+            <ul class="list-group bg-dark">
+                <% data.forEach(item=> { %>
+                    <li class="list-group-item bg-dark" style="color: whitesmoke;">
+                        
+                        <span>
+                            <span style="font-size:x-large;"><%= item.title %></span><em> - Released in <%= item.yearofrelease %></em>
+                            <form style="margin: 0;" action="/delete/<%= item.imdbid %>" method="post">
+                                <button type="submit" class="btn btn-primary">Remove</button>
+                            </form>
+                        </span>
+                    </li>
+                    <% }); %>
+            </ul>
+            <% } else { %>
+                <div class="alert alert-warning" role="alert">
+                    <h1 class="mb-0">NO Content to Display</h1>
+                </div>
+                <% } %>
+    </div>
+    <%- include("../partials/footer"); %>
