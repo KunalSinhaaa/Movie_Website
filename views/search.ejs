@@ -1,0 +1,17 @@
+<%- include("./partials/header"); %>
+    <div class="ll">
+        <form action="/" method="post">
+            <h4>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Movie Title</label>
+                    <input type="text" name="title" class="form-control" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Enter Title">
+                    <small id="emailHelp" style="color: white;" class="form-text">Enter Movie Title, 
+                        description or matching words</small>
+                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
+            </h4>
+        </form>
+    </div>
+
+<%- include("./partials/footer"); %>
